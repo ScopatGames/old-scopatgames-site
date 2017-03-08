@@ -14,7 +14,7 @@ class CardStore extends EventEmitter {
         description: ["The website you are visiting now was built with React and Flux.",
                       "Webpack and Node were used as the build tools.",
                       "The artwork is a combination of d3 animated SVG, static custom SVG, and prerendered binary images."],
-        url: [{label: "Landing page", url: "http://scottpatten.net"},
+        url: [{label: "Landing page", url: "https://scopatgames.github.io"},
               {label: "GitHub repository for source files", url: "https://github.com/ScopatGames/portfolio-website"}]
       }, {
         id: 7,
@@ -22,7 +22,7 @@ class CardStore extends EventEmitter {
         thumbnail: images.thumbnails[6],
         fullImage: images.fullimages[6],
         description: ["Survey app using React components and Redux state store.", "Single page app with no routing. The state is updated using Immutable.js Map() and List() data structures.", "Character designed with CSS gradients."],
-        url: [{label: "Use the App", url: "http://scottpatten.net/survey-app"},
+        url: [{label: "Use the App", url: "https://scopatgames.github.io/ernesto-the-survey-app"},
               {label: "GitHub repository", url: "https://github.com/ScopatGames/ernesto-the-survey-app"}
             ]
       }, {
@@ -31,7 +31,7 @@ class CardStore extends EventEmitter {
         thumbnail: images.thumbnails[2],
         fullImage: images.fullimages[2],
         description: ["This app crunches data on test scores and returns the average, max, and min values.  The inputs provide validation messages and CSS highlight for failing grades.", "The app was built with Angular.  Gulp was used as a build tool.  The app was tested with karma and mocha."],
-        url: [{label: "Use the App", url: "http://www.scottpatten.net/angular-app/"},
+        url: [{label: "Use the App", url: "https://scopatgames.github.io/test-score-stats"},
               {label: "GitHub repository", url: "https://github.com/ScopatGames/test-score-stats"}]
       }, {
         id: 2,
