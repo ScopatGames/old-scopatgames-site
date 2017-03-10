@@ -17,7 +17,7 @@ export default class NavList extends React.Component {
         title: "Portfolio",
         svgContent: <SvgPortfolio />
       }, {
-        href:"http://scottpatten.net/Patten_Scott_Resume.pdf",
+        href:"Patten_Scott_Resume.pdf",
         title: "Resume",
         svgContent: <SvgResume />
       }, {
