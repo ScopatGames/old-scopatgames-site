@@ -3,11 +3,12 @@
 $font-stack: 'Raleway', 'Arial', sans-serif;
 $primary-font-size: 20px;
 $primary-font-weight: 300;
-$primary-font-color: #bbb;
+$primary-font-color: #203a4d;
+$primary-font-color-light: #ccc;
 $primary-highlight-color: orange;
 $color-screen-dev-section: rgba(#375cad, 0.65);
 $color-link: #7b7b6a;
-$background-color: #14181d;
+$background-color: #fff;
 
 /* -- General Styles ------------------------ */
 * {
@@ -56,13 +57,13 @@ p {
 /* -- Links --------------------------------- */
 a:link,
 a:visited {
-    color: $color-link;
+    color: $primary-font-color;
     text-decoration: none;
 }
 
 a:hover,
 a:active {
-    color: #fff;
+    color: $primary-font-color;
 }
 
 /* -- Headings ------------------------------ */
@@ -75,7 +76,7 @@ h1, h2, h3 {
 h1 {
     margin-top: 0;
     margin-bottom: 0;
-    color: #fff;
+    color: $primary-font-color;
     font-weight: 100;
     font-size: 270%;
     letter-spacing: 1px;
@@ -84,9 +85,9 @@ h1 {
 /* -- Background ---------------------------- */
 .fixed-background {
     position: fixed;
-    background: -webkit-radial-gradient(transparent 50%, #05070a), $background-color;
-    background: -webkit-radial-gradient(transparent 50%, #05070a), #14181d;
-    background: radial-gradient(transparent 50%, #05070a), #14181d;
+    background: -webkit-linear-gradient(transparent 50%, #ffffff), $background-color;
+    background: -webkit-linear-gradient(transparent 50%, #ffffff), #ffffff;
+    background: linear-gradient(#ccc, transparent 80%), #ffffff;
     height: 1200px;
     width: 100%;
     z-index:-5;
@@ -145,7 +146,7 @@ h1 {
 
         a:link,
         a:visited{
-            color: white;
+            color: $primary-font-color;
             -webkit-transition: color 0.2s;
             transition: color 0.2s;
         }
@@ -157,7 +158,7 @@ h1 {
         }
         a:link .icon,
         a:visited .icon {
-          fill: white;
+          fill: $primary-font-color;
           -webkit-transition: fill 0.2s;
           transition: fill 0.2s;
         }
@@ -169,7 +170,7 @@ h1 {
         }
         a:link .icon-stroke,
         a:visited .icon-stroke {
-          stroke: white;
+          stroke: $primary-font-color;
           -webkit-transition: stroke 0.2s;
           transition: stroke 0.2s;
         }
@@ -190,7 +191,8 @@ h1 {
     position: relative;
     display: block;
     width: 100%;
-    height: 1200px;
+    height: 800px;
+    color: $primary-font-color-light;
 }
 
 .svg-water {
@@ -295,7 +297,7 @@ $buoy-bottom-delta: 0.1;
 
 .introduction-content {
     position: absolute;
-    bottom: 120px;
+    //bottom: 120px;
     left: 10%;
     width: 85%;
     max-width: 600px;
@@ -374,7 +376,7 @@ $buoy-bottom-delta: 0.1;
 
 /* -- Section: Portfolio -------------------- */
 .section-portfolio>h1 {
-  color: #555;
+  color: $primary-font-color;
   position: absolute;
   left: 8%;
   top: 100px;
@@ -383,7 +385,7 @@ $buoy-bottom-delta: 0.1;
   position: relative;
   display: block;
   border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $primary-font-color;
   width: 100%;
   min-height: 1660px;
   background: url(../images/mountains-right.png) bottom right no-repeat, url(../images/mountains-left.png) bottom left no-repeat, -webkit-linear-gradient($color-screen-dev-section, rgba(#fff, .85) 50%), url(../images/PixelPattern.png);
@@ -518,7 +520,7 @@ $buoy-bottom-delta: 0.1;
 
   .card-list {
     position: absolute;
-    border: 1px solid #555;
+    //border: 1px solid #555;
     left: 4%;
     right: 4%;
     top: 200px;
@@ -555,12 +557,13 @@ $buoy-bottom-delta: 0.1;
             padding: 6%;
             text-align: center;
             font-size: 128%;
-            color: $primary-font-color;
+            color: $primary-font-color-light;
             overflow: hidden;
           }
         }
       }
     }
+    li:active,
     li:hover {
       .card-container {
         border: 1px solid $primary-highlight-color;
