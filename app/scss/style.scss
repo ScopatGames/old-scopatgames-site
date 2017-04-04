@@ -504,6 +504,7 @@ $buoy-bottom-delta: 0.1;
         width: 30%;
         vertical-align: top;
         padding: 20px;
+        color: $primary-font-color-light;
         p {
           margin-bottom: 10px;
         }
@@ -512,6 +513,15 @@ $buoy-bottom-delta: 0.1;
         }
         .external-link {
           line-height: 140%;
+        }
+        a:link,
+        a:visited {
+          color: $primary-font-color-light;
+        }
+
+        a:active,
+        a:hover {
+          color: $primary-highlight-color;
         }
       }
     }
