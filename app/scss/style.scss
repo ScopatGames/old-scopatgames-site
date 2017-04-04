@@ -87,7 +87,7 @@ h1 {
     position: fixed;
     background: -webkit-linear-gradient(transparent 50%, #ffffff), $background-color;
     background: -webkit-linear-gradient(transparent 50%, #ffffff), #ffffff;
-    background: linear-gradient(#ccc, transparent 80%), #ffffff;
+    background: linear-gradient(rgb(252, 191, 134), transparent 70%), #ffffff;
     height: 1200px;
     width: 100%;
     z-index:-5;
@@ -113,7 +113,7 @@ h1 {
     padding-top: 10px;
     li {
         display: inline-block;
-        color: $primary-highlight-color;
+        color: $primary-font-color;
         font-size: 128%;
         padding-right: 8px;
     }
