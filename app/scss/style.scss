@@ -475,6 +475,7 @@ $buoy-bottom-delta: 0.1;
         overflow: hidden;
         background: rgba(#171824, 0.3);
         border-bottom: 1px solid #555;
+        color: $primary-font-color-light;
       }
       .close-button:link,
       .close-button:visited {
