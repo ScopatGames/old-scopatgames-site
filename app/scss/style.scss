@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:100,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 $font-stack: 'Raleway', 'Arial', sans-serif;
 $primary-font-size: 20px;
@@ -102,7 +102,9 @@ h1 {
     padding-bottom: 260px;
     text-align: center;
 }
-
+.hero-list {
+  padding: 40px 0px;
+}
 .hero-list > li {
     display: inline-block;
 }
