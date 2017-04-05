@@ -595,7 +595,7 @@ $buoy-bottom-delta: 0.1;
 /* -- Section: Contact -------------------- */
 .section-contact {
   position: relative;
-  height: 100vh;
+  height: 800px;
   width: 100%;
 
   .contact-container {
@@ -623,10 +623,20 @@ $buoy-bottom-delta: 0.1;
     .hero-icons {
         margin-left: 0px;
         margin-top: 10px;
+        padding-top: 20px;
         li {
             padding-right: 20px;
             .icon-div {
-              margin-top: 20px;
+              //margin-top: 20px;
+              //width:50px;
+              //height: 50px;
+              display:block;
+              margin: auto;
+              width:30px;
+              height: 30px;
+              vertical-align: middle;
+              overflow:hidden;
+              margin-bottom: 10px;
             }
         }
         li:last-of-type {
@@ -674,14 +684,11 @@ $buoy-bottom-delta: 0.1;
             .icon-div {
                 display:block;
                 margin: auto;
-                width:50px;
-                height: 50px;
+                width:30px;
+                height: 30px;
                 vertical-align: middle;
                 overflow:hidden;
                 margin-bottom: 10px;
-            }
-            .icon-text {
-                font-size: 100%;
             }
         }
     }
@@ -712,7 +719,7 @@ $buoy-bottom-delta: 0.1;
       font-size: 90%;
       .contact-container {
         position: absolute;
-        left: 2%;
+        left: 10%;
         width: 94%;
       }
     }
