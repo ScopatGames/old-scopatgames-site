@@ -389,10 +389,13 @@ $buoy-bottom-delta: 0.1;
   border-top: 1px solid white;
   border-bottom: 1px solid $primary-font-color;
   width: 100%;
-  min-height: 1660px;
-  background: url(../images/mountains-right.png) bottom right no-repeat, url(../images/mountains-left.png) bottom left no-repeat, -webkit-linear-gradient($color-screen-dev-section, rgba(#fff, .85) 50%), url(../images/PixelPattern.png);
-  background: url(../images/mountains-right.png) bottom right no-repeat, url(../images/mountains-left.png) bottom left no-repeat, linear-gradient($color-screen-dev-section, rgba(#fff, .85) 50%), url(../images/PixelPattern.png);
-  background-size: 66% 66%, 66% 45%, auto, auto;
+  min-height: 1400px;
+  //background: url(../images/mountains-right.png) bottom right no-repeat, url(../images/mountains-left.png) bottom left no-repeat, -webkit-linear-gradient($color-screen-dev-section, rgba(#fff, .85) 50%), url(../images/PixelPattern.png);
+  //background: url(../images/mountains-right.png) bottom right no-repeat, url(../images/mountains-left.png) bottom left no-repeat, linear-gradient($color-screen-dev-section, rgba(#fff, .85) 50%), url(../images/PixelPattern.png);
+  background: -webkit-linear-gradient($color-screen-dev-section, rgba(#fff, .85) 50%), url(../images/PixelPattern.png);
+  background: linear-gradient($color-screen-dev-section, rgba(#fff, .85) 50%), url(../images/PixelPattern.png);
+  //background-size: 66% 66%, 66% 45%, auto, auto;
+  background-size: auto, auto;
   .preload {
     display: none;
   }
@@ -519,12 +522,12 @@ $buoy-bottom-delta: 0.1;
         }
         a:link,
         a:visited {
-          color: $primary-font-color-light;
+          color: $primary-highlight-color;
         }
 
         a:active,
         a:hover {
-          color: $primary-highlight-color;
+          color: $primary-font-color-light;
         }
       }
     }
@@ -545,32 +548,33 @@ $buoy-bottom-delta: 0.1;
       display: inline-block;
       margin: 2%;
       width: 20%;
-      background: rgba(#555555, 0.1);
+      //background: rgba(#555555, 0.1);
       vertical-align: top;
       overflow: hidden;
 
       .card-container {
-        border: 1px solid #555;
+        /*border: 1px solid #555;
         -webkit-transition: border 0.2s;
-        transition: border 0.2s;
+        transition: border 0.2s;*/
         img {
+          border: 1px solid black;
           display: block;
           width: 100%;
         }
         .title-container {
-          background: url(../images/dot.png), #4b4c57;
-          background-size: 3px, auto;
+          //background: url(../images/dot.png), #4b4c57;
+          //background-size: 3px, auto;
           opacity: 0.75;
           height: 100px;
-          -webkit-transition: opacity 0.2s;
-          transition: opacity 0.2s;
+          //-webkit-transition: opacity 0.2s;
+          //transition: opacity 0.2s;
           p {
             text-overflow:ellipsis;
             width: 100%;
             padding: 6%;
             text-align: center;
             font-size: 128%;
-            color: $primary-font-color-light;
+            color: $primary-font-color;
             overflow: hidden;
           }
         }
@@ -579,14 +583,16 @@ $buoy-bottom-delta: 0.1;
     li:active,
     li:hover {
       .card-container {
-        border: 1px solid $primary-highlight-color;
-        -webkit-transition: border 0.2s;
-        transition: border 0.2s;
+        img{
+          border: 1px solid $primary-highlight-color;
+          -webkit-transition: border 0.2s;
+          transition: border 0.2s;
+        }
         p {
-          opacity: .85;
-          color: $primary-highlight-color;
-          -webkit-transition: opacity 0.2s;
-          transition: opacity 0.2s;
+          //opacity: .85;
+          //color: $primary-highlight-color;
+          //-webkit-transition: opacity 0.2s;
+          //transition: opacity 0.2s;
         }
       }
     }
@@ -646,7 +652,7 @@ $buoy-bottom-delta: 0.1;
     }
     .section-portfolio {
 
-      min-height: 2000px;
+      min-height: 1640px;
         .card-content-container {
           .relative-div {
             .active-card-image {
@@ -704,8 +710,9 @@ $buoy-bottom-delta: 0.1;
       font-weight: 300;
     }
     .section-portfolio {
-      background-size: 80% 33%, 80% 25%, auto, auto;
-      min-height: 1800px;
+      //background-size: 80% 33%, 80% 25%, auto, auto;
+      background-size: auto, auto;
+      min-height: 1700px;
 
       .card-list {
         li {

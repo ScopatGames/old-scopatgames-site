@@ -16,11 +16,11 @@ export default class NavList extends React.Component {
         href:"#portfolio",
         title: "Portfolio",
         svgContent: <SvgPortfolio />
-      }, {
+      }, /*{
         href:"Patten_Scott_Resume.pdf",
         title: "Resume",
         svgContent: <SvgResume />
-      }, {
+      },*/ {
         href:"#contact",
         title: "Contact",
         svgContent: <SvgContact />

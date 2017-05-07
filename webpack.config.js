@@ -13,7 +13,7 @@ var ExtractTextPluginConfig = new ExtractTextPlugin("bundle.css");
 module.exports = {
   entry: [path.resolve(__dirname, 'app/js/index.js')],
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: __dirname,
     filename: 'bundle.js'
   },
   module: {

@@ -8,14 +8,14 @@ class CardStore extends EventEmitter {
     this.cards = [
       {
         id: 1,
-        title:"React Websites",
+        title:"React Front Ends",
         thumbnail: images.thumbnails[0],
         fullImage: images.fullimages[0],
-        description: ["The website you are visiting now was built with React and Flux.",
+        description: ["The website you are visiting now was built with React.",
                       "Webpack and Node were used as the build tools.",
                       "The artwork is a combination of d3 animated SVG, static custom SVG, and prerendered binary images."],
-        url: [{label: "Landing page", url: "https://scopatgames.github.io"},
-              {label: "GitHub repository for source files", url: "https://github.com/ScopatGames/portfolio-website"}]
+        url: [{label: "Link to a demo site", url: "https://theguildlearning.github.io"},
+              {label: "GitHub repository for portfolio website", url: "https://github.com/ScopatGames/scopatgames.github.io"}]
       }, {
         id: 7,
         title:"React Redux Apps",
