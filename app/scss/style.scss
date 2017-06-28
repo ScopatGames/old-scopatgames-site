@@ -396,6 +396,7 @@ $buoy-bottom-delta: 0.1;
   background: linear-gradient($color-screen-dev-section, rgba(#fff, .85) 50%), url(../images/PixelPattern.png);
   //background-size: 66% 66%, 66% 45%, auto, auto;
   background-size: auto, auto;
+  z-index: 5;
   .preload {
     display: none;
   }
