@@ -3,7 +3,7 @@ var node_modules = path.resolve(__dirname, 'node_modules');
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: path.join(__dirname, '/app/index.html'),
+  template: path.join(__dirname, '/index.html'),
   filename: 'index.html',
   inject: 'body'
 });
