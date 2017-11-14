@@ -32,7 +32,9 @@ export default class BioContent extends React.Component {
             <img src={imgBuoy} width="100%"/>
             <Bird/>
           </div>
-          <svg className="svg-water" viewBox="0 0 2000 800" width="2000" preserveAspectRatio="xMidYMin slice">
+          <div className="css-water">
+          </div>
+          {/*<svg className="svg-water" viewBox="0 0 2000 800" width="2000" preserveAspectRatio="xMidYMin slice">
             <defs>
               <linearGradient id="water-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                   <stop offset="0%" style={{stopColor:"rgb(71, 86, 101)", stopOpacity: 0.98}} />
@@ -40,7 +42,7 @@ export default class BioContent extends React.Component {
                   <stop offset="85%" style={{stopColor:"rgb(0,8,16)", stopOpacity:1}} />
               </linearGradient>
             </defs>
-          </svg>
+          </svg>*/}
           <div className="introduction-content" id="bio">
               <h2>My skills</h2>
 

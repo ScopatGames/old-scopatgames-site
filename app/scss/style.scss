@@ -202,6 +202,14 @@ h1 {
     z-index: 1;
 }
 
+.css-water {
+  position: absolute;
+  z-index:1;
+  width: 100vw;
+  height: 800px;
+  background: linear-gradient(rgba(71,86,101,0.98) 0%, rgba(0,47,93,0.99) 35%, rgba(0,8,16,1) 85%);
+}
+
 /* -- Buoy animation parameters ----------------- */
 $buoy-left: 60;
 $buoy-left-delta: 0.5;
@@ -282,11 +290,11 @@ $buoy-bottom-delta: 0.1;
 }
 @-webkit-keyframes fly {
   from {-webkit-transform: translateX(34px) translateY(-175px) rotate(0deg);transform: translateX(34px) translateY(-175px) rotate(0deg);}
-  to {-webkit-transform: translateX(-1500px) translateY(-650px) rotate(30deg);transform: translateX(-1500px) translateY(-650px) rotate(30deg)};
+  to {-webkit-transform: translateX(-3500px) translateY(-650px) rotate(30deg);transform: translateX(-3500px) translateY(-650px) rotate(30deg)};
 }
 @keyframes fly {
   from {-webkit-transform: translateX(34px) translateY(-175px) rotate(0deg);transform: translateX(34px) translateY(-175px) rotate(0deg);}
-  to {-webkit-transform: translateX(-1500px) translateY(-650px) rotate(30deg);transform: translateX(-1500px) translateY(-650px) rotate(30deg)};
+  to {-webkit-transform: translateX(-3500px) translateY(-650px) rotate(30deg);transform: translateX(-3500px) translateY(-650px) rotate(30deg)};
 }
 
 .submarine {
@@ -549,6 +557,7 @@ $buoy-bottom-delta: 0.1;
       display: inline-block;
       margin: 2%;
       width: 20%;
+      max-width: 300px;
       //background: rgba(#555555, 0.1);
       vertical-align: top;
       overflow: hidden;
