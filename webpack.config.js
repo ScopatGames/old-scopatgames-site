@@ -1,5 +1,5 @@
 var path = require('path');
-var node_modules = path.resolve(__dirname, 'node_modules');
+//var node_modules = path.resolve(__dirname, 'node_modules');
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
@@ -20,17 +20,17 @@ module.exports = {
     loaders: [{
       test: /\.js?$/i,
       include: path.resolve(__dirname, 'app'),
-      loader: 'babel'
+      loader: 'babel-loader'
     },
     {
       test: /\.scss$/i,
       include: path.resolve(__dirname, 'app/scss'),
-      loader: ExtractTextPlugin.extract(['css', 'resolve-url', 'sass'])
+      loader: ExtractTextPlugin.extract(['css-loader', 'resolve-url-loader', 'sass-loader'])
     },
     {
       test: /\.(png|jpe?g|gif)$/i,
       include: path.resolve(__dirname, 'app/images'),
-      loader: 'file?name=img/img-[hash:6].[ext]'
+      loader: 'file-loader?name=img/img-[hash:6].[ext]'
     },
     {
       test: /\.html$/i,
