@@ -8,12 +8,10 @@ class CardStore extends EventEmitter {
     this.cards = [
       {
         id: 1,
-        title:"React Front Ends",
+        title:"Website Front Ends",
         thumbnail: images.thumbnails[0],
         fullImage: images.fullimages[0],
-        description: ["The website you are visiting now was built with React.",
-                      "Webpack and Node were used as the build tools.",
-                      "The artwork is a combination of d3 animated SVG, static custom SVG, and prerendered binary images."],
+        description: ["I have experience building website front ends with React and Angular."],
         url: [{label: "Link to a demo site", url: "https://theguildlearning.github.io"},
               {label: "GitHub repository for portfolio website", url: "https://github.com/ScopatGames/scopatgames.github.io"}]
       }, {

@@ -8,7 +8,6 @@ export default class Card extends React.Component {
       title: this.props.title,
       fullImage: this.props.fullImage,
       description: this.props.description,
-      urlLabel: this.props.urlLabel,
       url: this.props.url,
       currentClassName: "active-card-visible"
     };

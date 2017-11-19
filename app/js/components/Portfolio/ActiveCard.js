@@ -21,7 +21,6 @@ export default class ActiveCard extends React.Component {
       title: this.state.activeCard.title,
       fullImage: null,
       description: this.state.activeCard.description,
-      urlLabel: this.state.activeCard.urlLabel,
       url: this.state.activeCard.url,
       currentClassName: "active-card-hidden"
     };
